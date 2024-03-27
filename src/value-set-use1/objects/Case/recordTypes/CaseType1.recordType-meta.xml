@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseType1</fullName>
+    <active>true</active>
+    <businessProcess>CaseType1</businessProcess>
+    <description>Case Type using subset of the standard value set</description>
+    <label>Case Type 1</label>
+</RecordType>

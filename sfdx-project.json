@@ -1,0 +1,40 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    },
+    {
+      "path": "src/value-set-def",
+      "package": "StandardValueSetPackage1",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": false,
+      "versionDescription": "Contains the value set definition and its translations"
+    },
+    {
+      "path": "src/value-set-use1",
+      "package": "StandardValueSetPackage2",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": false,
+      "versionDescription": "Contains Record Type and Business Process",
+      "dependencies": [
+        {
+          "package": "StandardValueSetPackage1",
+          "versionNumber": "0.1.0.LATEST"
+        }
+      ]
+    }
+  ],
+  "name": "StandardValueSetPackage",
+  "namespace": "packocz",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "59.0",
+  "packageAliases": {
+    "StandardValueSetPackage1": "0Ho08000000PAwoCAG",
+    "StandardValueSetPackage1@0.1.0-1": "04t08000000UJzPAAW",
+    "StandardValueSetPackage2": "0Ho08000000PAwtCAG",
+    "StandardValueSetPackage2@0.1.0-1": "04t08000000UJzUAAW"
+  }
+}
